@@ -53,4 +53,28 @@ function maker(elementHtml, elementType, elementParent){
     return ele;
 }
 
+const url2 = 'https://jsonplaceholder.typicode.com/users';
+
+fetch(url)
+.then(res => res.json())
+.then(data => {
+    console.log(data);
+});
+
+
+// function getPromise(num){
+//     return new Promise((resolve, reject)=>{  
+//         if (num>5){
+//             resolve('Greater than five');
+//         }else{
+//             reject('less than five');
+//         }
+//     });
+// }
+
+// getPromise(3).then(res => console.log(res)).catch(error => console.log(error));
+
+
+
+
  
